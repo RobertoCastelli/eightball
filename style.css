@@ -4,28 +4,39 @@ body {
     text-align: center;
     font-family: monospace;
     background-image: url('img/bg.jpg');
-    background-color: black;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
-    color: black;
+    color: #44B883;
 }   
 
 header {
     display: flex;
     justify-content: space-around;
-    padding: 0 20px;
+    background: rgb(53, 73, 93, 0.9);
+    padding: 10px 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+section,
+footer {
+    background: rgb(53, 73, 93, 0.9);
+    padding: 30px 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 input {
     outline: none;
     border: none;
     background: transparent;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #999;
     margin: 10px;
+    font-size: medium;
 }
 
 ::placeholder {
-    color: black;
+    color: #999;
     text-align: center;
     font-size: medium;
     font-family: monospace;
@@ -47,19 +58,14 @@ button {
 
 
 button:hover {
-    background-color: darkcyan;
+    background-color: #35495D;
+    color: #44B883;
 }
 
 button:active {
     transform: translateY(4px);
     box-shadow: 0 5px #666;
-    background-color: darkcyan;
-}
-
-.container {
-    background: rgb(128, 128, 128, 0.9);
-    padding: 30px 5px;
-    border-radius: 10px;
+    background-color: #35495D;
 }
 
 .title-ball {

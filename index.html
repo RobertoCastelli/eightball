@@ -10,24 +10,32 @@
     <title>eightball</title>
 </head>  
 <body>
-    <div class="container">
+
+
         <header>
             <h1>EIGHTBALL</h1>
-            <img class="title-ball" src="img/ball.svg" alt="ball"> 
+            <img class="title-ball" src="img/ball.svg" alt="title-ball"> 
             <h1>QUEST</h1>
         </header>
-        <main>
-            <input type="text" placeholder="place your riddle">
+        
+        <section>
+            <input id="question" type="text" placeholder="place your riddle">
             <div>
-                <button>SHAKE IT</button>  
+                <button id="btnSubmit">SHAKE IT</button>  
             </div>
+        </section>
+
+        <section>
+            <p id="response">...</p>
             <img src="https://via.placeholder.com/150" alt="eightball">
-        </main>
+        </section>
+
         <footer>
             <p>copyright &copy; 2020 Roberto Castelli</p>
             <p>www.robertocastelli.dev</p>
         </footer>
-    </div>
+
+    <script src="app.js"></script>
 
 </body>
 </html>
