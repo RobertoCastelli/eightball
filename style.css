@@ -1,29 +1,27 @@
 body {
-    max-width: 350px;
-    margin: 5% auto;
+    background-image: url('img/bg.png');
     text-align: center;
     font-family: monospace;
-    background-image: url('img/bg.jpg');
-    background-repeat: repeat;
-    background-size: cover;
-    color: #44B883;
+    font-size: 15px;  
+    color: bisque;
+}
+
+.container,
+footer {
+    max-width: 350px;
+    margin: 10px auto;
+    background: rgba(85, 85, 90, 0.9);
+    padding: 20px 0;
+    border-radius: 10px;
 }   
 
 header {
     display: flex;
-    justify-content: space-around;
-    background: rgb(53, 73, 93, 0.9);
-    padding: 10px 30px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-
-section,
-footer {
-    background: rgb(53, 73, 93, 0.9);
-    padding: 30px 5px;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    position: relative;
+    justify-content: space-between;
+    font-size: 15px;
+    letter-spacing: 0.9px;
+    padding: 0 15px;
 }
 
 input {
@@ -32,43 +30,43 @@ input {
     background: transparent;
     border-bottom: 1px solid #999;
     margin: 10px;
-    font-size: medium;
 }
 
 ::placeholder {
     color: #999;
     text-align: center;
-    font-size: medium;
     font-family: monospace;
 }
 
 button {
-    margin: 30px;
-    box-shadow: 0 9px #999;
-    border-radius: 15px;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 5px #999;
+    border-radius: 50%;
     border: none;
     outline: none;
-    text-decoration: none;
-    background-color: #44B883;
-    color: #35495D;
+    background-color: bisque;
+    color: black;
     cursor: pointer;
     font-size: 24px;
     padding: 15px 15px;
 }
 
-
 button:hover {
-    background-color: #35495D;
-    color: #44B883;
+    background-color: grey; 
+    color: bisque;
 }
 
 button:active {
     transform: translateY(4px);
-    box-shadow: 0 5px #666;
-    background-color: #35495D;
+    box-shadow: 0 2px #666;
+    background-color: rgb(85, 85, 90);   
 }
 
 .title-ball {
+    position: absolute;
+    top: 12%;
+    left: 53%;
     width: 50px;
     height:50px;    
 }
