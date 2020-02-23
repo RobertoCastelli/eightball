@@ -13,6 +13,7 @@
     <title>eightball</title>
 </head>  
 <body>
+    <audio id="audio" src="sound/shake.mp3"></audio>
     <div class="container">
         <header>
             <img class="title-ball" src="img/ball.svg" alt="title-ball"> 
@@ -20,9 +21,11 @@
         </header>
         
         <main>
-            <input id="input-question" type="text" placeholder="place your riddle">
-            <button id="btnSubmit"><i class="fas fa-magic fa-2x"></i></button>  
-            <p id="display-question"> --- </p>
+            <input id="input-question" type="text" placeholder="place your riddle" maxlength="23">
+            <button id="btnSubmit"><i class="fas fa-hat-wizard fa-2x"></i></button>  
+            <p id="display-question">...</p>
+            <p id="display-answer">...</p>
+            <p id="display-type">...</p>
             <img id="display-ball" src="https://via.placeholder.com/150" alt="eightball">
         </main>
 
